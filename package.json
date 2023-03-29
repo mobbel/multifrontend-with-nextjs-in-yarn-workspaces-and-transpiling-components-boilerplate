@@ -1,0 +1,18 @@
+{
+  "name": "multifrontend-with-package",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": ["frontend/dashboard", "frontend/commerce"],
+  "scripts": {
+    "dev:dashboard": "yarn workspace dashboard dev",
+    "build:dashboard": "yarn workspace dashboard build",
+    "start:dashboard": "yarn workspace dashboard start",
+    "lint:dashboard": "yarn workspace dashboard lint",
+    "dev:commerce": "yarn workspace commerce dev",
+    "build:commerce": "yarn workspace commerce build",
+    "start:commerce": "yarn workspace commerce start",
+    "lint:commerce": "yarn workspace commerce lint"
+  }
+}
