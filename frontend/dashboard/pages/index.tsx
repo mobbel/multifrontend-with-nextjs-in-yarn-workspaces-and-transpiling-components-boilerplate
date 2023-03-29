@@ -1,4 +1,6 @@
 import styles from "@/styles/Home.module.css";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import Image from "next/image";
@@ -7,6 +9,7 @@ import { TestComponent } from "../../../componentsPackage/testComponent";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const { t } = useTranslation("common");
   return (
     <>
       <Head>
@@ -20,7 +23,7 @@ export default function Home() {
           Dashboard
           <TestComponent></TestComponent>
           <p>
-            Get started by editing&nbsp;
+            {t("startEditing")}&nbsp;
             <code className={styles.code}>pages/index.tsx</code>
           </p>
           <div>
@@ -123,4 +126,12 @@ export default function Home() {
       </main>
     </>
   );
+}
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "footer"])),
+      // Will be passed to the page component as props
+    },
+  };
 }
