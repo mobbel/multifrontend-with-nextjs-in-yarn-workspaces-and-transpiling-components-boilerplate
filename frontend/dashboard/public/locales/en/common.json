@@ -1,3 +1,9 @@
 {
-  "startEditing": "Get started by editing"
+  "startEditing": "Get started by editing",
+  "enterEmail": "Enter you email address",
+  "emailAdress": "E-Mail address",
+  "selectOrganisation": "Select organisation",
+  "wichOrganisation": "Which organization would you like to register with",
+  "password": "Password",
+  "logoutSuccess": "You are successfully logged out."
 }

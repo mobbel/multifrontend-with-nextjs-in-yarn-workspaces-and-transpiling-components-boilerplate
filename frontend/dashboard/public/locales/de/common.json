@@ -1,3 +1,9 @@
 {
-  "startEditing": "Starte mit der bearbeitung der"
+  "startEditing": "Starte mit der bearbeitung der",
+  "enterEmail": "Gebe deine Email-Adresse an",
+  "emailAdress": "E-Mail Adresse",
+  "selectOrganisation": "Organisation auswählen",
+  "wichOrganisation": "Mit welcher Organisation möchtest du dich anmelden",
+  "password": "Passwort",
+  "logoutSuccess": "Du bist erfolgreich abgemeldet."
 }
