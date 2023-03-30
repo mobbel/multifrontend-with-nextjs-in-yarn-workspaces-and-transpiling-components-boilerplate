@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Som Ting Wong",
+    "mail": "customer1@test.de",
+    "mandatories": [
+      {
+        "name": "Organisation 1",
+        "id": "test1" 
+      }
+    ],
+    "password": "gast1"
+  },
+  {
+    "name": "Weng Tsu Eng",
+    "mail": "customer2@test.de",
+    "mandatories": [
+      {
+        "name": "Organisation 1",
+        "id": "test1" 
+      },
+      {
+        "name": "Organisation 2",
+        "id": "test2" 
+      }
+    ],
+    "password": "gast2"
+  }
+]
