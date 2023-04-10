@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  commerce:
+    image: frontend
+    command: sh -c "yarn run dev:commerce"
+    ports:
+      - 3030:3000
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app
+
+  dashboard:
+    image: frontend
+    command: sh -c "yarn run dev:dashboard"
+    ports:
+      - 3000:3000
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app

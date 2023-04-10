@@ -13,6 +13,7 @@
     "dev:commerce": "yarn workspace commerce dev",
     "build:commerce": "yarn workspace commerce build",
     "start:commerce": "yarn workspace commerce start",
-    "lint:commerce": "yarn workspace commerce lint"
+    "lint:commerce": "yarn workspace commerce lint",
+    "dev:dockerImagePrepare": "docker build . -t frontend -f ./dev/frontend/Dockerfile"
   }
 }
